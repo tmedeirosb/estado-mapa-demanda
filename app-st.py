@@ -7,7 +7,8 @@ from collections import Counter
 # Load the cleaned data
 #@st.cache
 def load_data():
-    df = pd.read_excel('rel_demanda_resposta_unica-anonimo.xlsx')  # Insira o caminho correto para o arquivo
+    #df = pd.read_excel('rel_demanda_resposta_unica-anonimo.xlsx')  # Insira o caminho correto para o arquivo
+    df = pd.read_csv('rel_demanda_resposta_unica-anonimo.csv')  # Insira o caminho correto para o arquivo
     return df
 
 df = load_data()
